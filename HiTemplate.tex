@@ -1,0 +1,81 @@
+\documentclass[a4paper,12pt]{article} % 文档类为 article，纸张为 A4，字号为 12pt
+\usepackage{ctex} % 加载 ctex 宏包以支持中文
+\usepackage{graphicx} % 加载 graphicx 包以支持插入图片
+\usepackage{amsmath} % 加载 amsmath 包以支持数学公式
+\usepackage{amsfonts} % 加载 amsfonts 包以支持数学字体
+\usepackage{amssymb} % 加载 amssymb 包以支持数学符号
+\usepackage{hyperref} % 加载 hyperref 包以支持超链接
+\usepackage{geometry} % 加载 geometry 包以控制页面布局
+\usepackage{algorithm} % 加载 algorithm 包以支持算法环境
+\usepackage{algorithmic} % 加载 algorithmic 包以支持算法步骤
+\usepackage{bookmark} % 加载 bookmark 宏包以支持书签
+\usepackage{titlesec} % 加载 titlesec 包以自定义章节标题格式
+
+% 页面设置
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm} % 设置页面边距
+
+% 定义字体
+\setCJKfamilyfont{wenkai}{LXGW WenKai} % 霞鹜文楷
+\setCJKfamilyfont{heiti}{Noto Sans CJK SC} % 思源黑体
+\setCJKfamilyfont{songti}{Noto Serif CJK SC} % 思源宋体
+\setCJKfamilyfont{pingfang}{PingFang SC} % 苹方
+
+% 定义新的命令来使用这些字体
+\newcommand{\wenkaifont}{\CJKfamily{wenkai}} % 霞鹜文楷
+\newcommand{\heitifont}{\CJKfamily{heiti}} % 思源黑体
+\newcommand{\songtifont}{\CJKfamily{songti}} % 思源宋体
+\newcommand{\pingfangfont}{\CJKfamily{pingfang}} % 苹方
+
+% 自定义章节标题字体
+\titleformat{\section}{\wenkaifont\huge\bfseries}{\thesection}{1em}{} % 设置 section 字体为霞鹜文楷
+\titleformat{\subsection}{\heitifont\Large\bfseries}{\thesubsection}{1em}{} % 设置 subsection 字体为思源黑体
+\titleformat{\subsubsection}{\songtifont\normalsize\bfseries}{\thesubsubsection}{1em}{} % 设置 subsubsection 字体为思源宋体
+
+\title{\pingfangfont \LaTeX 中文模版} % 文档标题使用苹方
+\author{\pingfangfont Raffe Yang} % 作者姓名使用苹方
+\date{\today} % 日期
+
+\begin{document}
+
+\maketitle % 生成标题
+
+\begin{abstract} % 摘要
+    \pingfangfont 这是文档的摘要部分。摘要简要介绍了文档的内容和目的。
+\end{abstract}
+
+\tableofcontents % 生成目录
+
+\section{引言} % 引言部分
+\pingfangfont 引言部分介绍了文档的背景和研究的目的。可以在这里写一些基础知识。
+
+\section{方法} % 方法部分
+\pingfangfont 在这一部分，您可以详细描述您的研究方法。
+\[
+H(X) = -\sum_{i=1}^{n} P(x_i) \log_b P(x_i)
+\]
+
+\subsection{示例算法} % 算法部分
+\begin{algorithm}
+    \caption{示例算法}
+    \begin{algorithmic}
+        \STATE 输入：$x$
+        \STATE 输出：$y$
+        \STATE $y \gets x^2$
+        \RETURN $y$
+    \end{algorithmic}
+\end{algorithm}
+
+\section{结果} % 结果部分
+\pingfangfont 在这一部分，您可以展示您的研究结果。
+
+\subsection{结果分析}
+\pingfangfont 这里可以添加对结果的分析。
+
+\section{测试字体}
+这是没有指定字体的效果
+\wenkaifont 这是霞鹜文楷
+\heitifont 这是思源黑体
+\songtifont 这是思源宋体
+\pingfangfont 这是苹方
+
+\end{document}
