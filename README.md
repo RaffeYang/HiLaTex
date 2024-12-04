@@ -44,5 +44,4 @@ xelatex Hi.tex
 
 ## 贡献
 欢迎任何形式的贡献！如果你有建议或发现问题，请提交 issue 或者创建 pull request。
-许可证
-该项目采用 MIT 许可证，详情请查看 LICENSE 文件。
+[MIT](LICENSE) 许可证。
