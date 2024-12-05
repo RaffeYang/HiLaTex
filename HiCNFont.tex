@@ -1,7 +1,7 @@
 \documentclass{article}
 \usepackage{ctex}     % 加载 ctex 宏包
 \author{Raffe Yang}
-\title{\LaTeX 中文自定义字体显示}
+\title{\textbf{\LaTeX 中文自定义字体显示}} % 将标题加粗
 
 % 定义字体
 \setCJKfamilyfont{wenkai}{LXGW WenKai} % 霞鹜文楷
@@ -19,6 +19,12 @@
 % \setmainfont{PingFang SC} % 设置主英文字体为苹方
 
 % \setCJKmainfont{PingFang SC} % 设置中文主字体为苹方
+% 如果使用setCJKmainfont可以用下面的方法清除默认字体
+% 清空默认字体设置
+% \renewcommand{\CJKrmdefault}{} % 清空 CJK 正文字体默认设置
+% \renewcommand{\CJKsfdefault}{}  % 清空 CJK 无衬线字体默认设置
+% \renewcommand{\CJKttdefault}{}  % 清空 CJK 等宽字体默认设置
+
 \begin{document}
 \maketitle
 \section{使用 macOS 字体的示例}
